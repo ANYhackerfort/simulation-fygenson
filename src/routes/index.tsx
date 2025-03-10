@@ -4,7 +4,7 @@ import { NodePositionProvider } from '../taskbar/node_mover/hook_position';
 
 const routers = createBrowserRouter([
   {
-    path: "/playground",
+    path: "/",
     element: (
       <NodePositionProvider>
         <CustomLabWrapper />
