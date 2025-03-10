@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./taskbar.css";
 import TabComponent from "./tabs";
-import LabHelperMain from "./labHelper";
 
 interface BarProps {
     height?: string; 

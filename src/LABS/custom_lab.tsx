@@ -6,8 +6,7 @@ import CornerText from "../miscellaneous/2DTexts/2dText.tsx";
 import Grid from "../miscellaneous/planks/grid.tsx";
 import CustomLabRaycastingComponent from "../raycasters/custom_lab_caster.tsx";
 import FloatingSquare from "../taskbar/mainBlock.tsx";
-import { CameraProvider } from "../contexts/cameraPositionContext.tsx";
-import Lab1Camera from "./cameras/lab1Camera.tsx";
+import { CameraProvider } from "./cameras/cameraPositionContext.tsx";
 import { useNodePosition } from "../taskbar/node_mover/hook_position";
 import FrankHertzMain from "../labComponents/FrankHertzMainComp/frankHertz.tsx";
 import VVR from "../labComponents/FrankHertzMainComp/VariableVoltageRegulator/mainframe.tsx";
@@ -21,6 +20,7 @@ import { NodeEdgeProvider } from "../taskbar/node_mover/node_edge_context.tsx";
 import PreloadModels from "./preload_models.tsx";
 import Oscilloscope from "../labComponents/Oscillscope/oscillscope.tsx";
 import FloppyDisk from "../labComponents/floppydisk.tsx";
+import Lab1Camera from "./cameras/lab1Camera.tsx";
 
 const object3DMap: Record<string, React.FC<{ unique_id: string, position: [number, number, number]; rotation?: [number, number, number]; scale?: [number, number, number]}>> = {
   "FrankHertzBox": FrankHertzMain,

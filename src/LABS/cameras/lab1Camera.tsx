@@ -3,8 +3,8 @@ import { useMemo } from "react";
 import { PerspectiveCamera } from "@react-three/drei";
 import * as THREE from "three";
 import { useFrame, useThree } from "@react-three/fiber"
-import { useCameraState } from "../../contexts/cameraPositionContext";
 import ControlsComponent from "../../miscellaneous/controls/cameracontrol";
+import { useCameraState } from "./cameraPositionContext";
 
 const Lab1Camera: React.FC = () => {
     const cameraRef = useRef<THREE.PerspectiveCamera | null>(null); // Create a ref for the camera
