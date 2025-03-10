@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useMemo } from 'react';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 import { useThree } from '@react-three/fiber';
-import { useCameraState } from '../../contexts/cameraPositionContext';
 
 const ControlsComponent: React.FC = () => {
   const controlsRef = useRef(null);

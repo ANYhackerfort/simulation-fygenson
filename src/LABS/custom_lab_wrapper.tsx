@@ -1,10 +1,10 @@
 import React, { Suspense } from "react";
 import CornerText from "../miscellaneous/2DTexts/2dText.tsx";
 import FloatingSquare from "../taskbar/mainBlock.tsx";
-import { CameraProvider } from "../contexts/cameraPositionContext.tsx";
 import { NodeEdgeProvider } from "../taskbar/node_mover/node_edge_context.tsx";
 import CustomLab from "./custom_lab.tsx";
 import { InstrumentProvider } from '../contexts/instrument_value';
+import { CameraProvider } from "./cameras/cameraPositionContext.tsx";
 
 const CustomLabWrapper: React.FC = () => {
   return (
